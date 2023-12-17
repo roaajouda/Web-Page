@@ -1,0 +1,356 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+    --fa-style-family-classic: "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+
+}
+ul {
+    list-style: none;
+}
+.parent {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    width: 100%;
+   min-height: 100vh;
+    
+}
+.logo {
+    
+    height: 60px;
+}
+.nav {
+    background-color: bisque;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: rgb(233 246 246 / 98%);
+    /* padding-left: 15px;
+    padding-right: 15px; */
+   
+}
+.logo {
+  
+    background-color: white;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo .type {
+    margin-top: 10px;
+    width: fit-content;
+    height: 40px;
+    padding: 10px ;
+    border: 1px solid #888;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+.logo .type i {
+    color: #888;
+    align-items: center;
+   
+}
+.logo input {
+    border: none;
+    width: 120px;
+    margin-left: 5px;
+    
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.loge2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.loge2 i {
+   font-size: 20px;
+  margin-right: 10px;
+   
+}
+.loge2::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: red;
+    left: 12px;
+    top: 12px;
+
+}
+.content {
+   
+    /* height: 100vh; */
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+.content h2 {
+    padding: 15px 0 0;
+    font-size: 40px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.span {
+    width: 140px;
+    height: 3px;
+    background-color: white;
+}
+.span span {
+    display: block;
+    width: 30%;
+    background-color: black;
+    height: 3px;
+}
+.cont {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
+    margin-top: 15px;
+    gap: 20px; 
+    
+}
+.col {
+    background-color: white;
+}
+.nav {
+    background-color: white;
+    box-shadow: 3px 10px #eee;
+    margin-right: 3px;
+    padding: 10px;
+}
+.textnav {
+    padding: 20px;
+    text-align: center;
+}
+.textnav h4 {
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+}
+.textnav h4::before {
+    content: "";
+    width: 65%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: -17px;
+    left: 17%;
+}
+.textnav h4::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: black;
+    border: 5px solid white;
+    position: absolute;
+    bottom: -24.5px;
+    left: 42%;
+}
+.nav ul {
+    padding: 15px;
+    color: black;
+}
+.nav li {
+    margin-bottom: 10px;
+    padding: 10px;
+    color: black;
+    cursor: pointer;
+}
+.nav li a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav li a i {
+    margin-right: 5px;
+}
+.backli {
+    background-color: #eee;
+    border-radius: 5px;
+}
+.nav li:hover {
+    background-color: #eee;
+    border-radius: 5px;
+}
+.col {
+    padding: 22px 20px;
+}
+.cont .col  .text {
+    margin-bottom: 15px;
+}
+.cont .col  .text h3  {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.cont .col  .text span {
+    font-size: 17px;
+    color: #888; 
+}
+.green {
+    border: 3px solid var(--green-color);
+    padding: 3px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.divcon {
+    color: white;
+    padding: 20px;
+    background-color: var(--green-color);
+}
+.blue {
+    border: 3px solid var(--blue-color);
+    padding: 3px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.blue .divcon {
+    color: white;
+    padding: 20px;
+    background-color: var(--blue-color);
+}
+.orange {
+    border: 3px solid var(--orange-color);
+    padding: 3px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.orange .divcon {
+    color: white;
+    padding: 20px;
+    background-color: var(--orange-color);
+}
+.divcon p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.divcon span {
+    font-size: 40px;
+    position: relative;
+}
+.divcon .dollar {
+    font-size: 25px;
+    margin-right: 10px;
+    position: absolute;
+    top: -4px;
+    left: -18px;
+}
+.divcont {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.true p i {
+    color: #22c55e !important;
+    margin-right: 5px;
+}
+.divcont  i {
+    color: var(--grey-color);
+}
+.folse p i{
+    color: var(--red-color);
+    margin: 1px 10px 0 4px;
+    font-size: 17.5px;
+}
+.join {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.greena a {
+    text-decoration: none;
+    background-color: var(--green-color);
+    color: white;
+    width: fit-content;
+    padding: 7px 12px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.bluea a {
+    text-decoration: none;
+    background-color: var(--blue-color);
+    color: white;
+    width: fit-content;
+    padding: 7px 12px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.orangea p {
+    text-align: center;
+    color: var(--grey-color);
+   font-size: 17px;
+}
+@media (max-width: 767px) {
+    .parent {
+        grid-template-columns: 60px 1fr;
+    }
+    .nav span  {
+        display: none;
+    }
+    .textnav {
+        padding: 0px;
+    }
+    .textnav h4 {
+        font-size: 13px;
+        margin-bottom: 20px;
+        margin-top: 5px;
+    
+    }
+    .textnav h4::after {
+        display: none;
+    }
+    .textnav h4::before {
+        display: none;
+    }
+    .nav ul {
+        padding: 0;
+    }
+    .nav li {
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 5px;
+        color: black;
+        cursor: pointer;
+    }
+    .nav li a {
+        font-size: 15px;
+    }
+}
+@media (max-width: 767px) {
+    .cont {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+        gap: 10px;
+    }
+}
